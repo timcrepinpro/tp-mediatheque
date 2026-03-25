@@ -33,18 +33,37 @@ class Program
             }
         }
 
-        List<Abonne> abonnes = new List<Abonne>
+        try
         {
-            new Abonne (1,"mathieu merrio"),
-            new Abonne (2,"jonathan zablot"),
-            new Abonne (3,"alex colpin")
-        };
-        foreach (Abonne abonne in abonnes)
-        {
-            abonne.Afficher();
         
+            Dictionary<int , string> abonnee = new Dictionary<int , string>();
+            abonnee.Add(1,"mathieu merrio");
+            abonnee.Add(2,"jonathan zablot");
+            abonnee.Add(3,"alex colpin");
+        
+            Console.WriteLine("quelle id chercher");
+            int rechercher = int.Parse(Console.ReadLine());
+            foreach (KeyValuePair<int, string> paire in abonnee)
+            {
+                if(paire.Key == rechercher)
+                {
+                    Console.WriteLine($"{paire.Key}: {paire.Value}");
+                }
+            }
         }
+        catch(Exception e)
+        {
+            Console.WriteLine(e.Message);
             
+        }
+
+        
+
+        
+   
         
     }
 }
+
+
+// gaillard quentin richard robert
