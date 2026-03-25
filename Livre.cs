@@ -32,7 +32,7 @@ class Livre :Document
     {
         base.Afficher();
         
-        Console.WriteLine($"se livre a etai fait par {auteur} et contient {nombrepages} pages");
+        Console.WriteLine($"lauteur est  {auteur} et le nombre de pages est de  {nombrepages} ");
     }
     
 }

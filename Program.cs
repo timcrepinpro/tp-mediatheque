@@ -57,7 +57,10 @@ class Program
             
         }
 
-        
+        Dictionary<int , string> empreint = new Dictionary<int , string>();
+        empreint.Add(1,"mathieu merrio");
+        empreint.Add(2,"jonathan zablot");
+        empreint.Add(3,"alex colpin");
 
         
    
