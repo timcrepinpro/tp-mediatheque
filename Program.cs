@@ -11,5 +11,26 @@ class Program
         DVD dvd1 = new DVD (2,"jcp",true,"mathieu merrio",89);
         dvd1.Afficher();
         dvd1.ToString();
+
+        List<Document> documents = new List<Document>
+        {
+            new Livre (1,"jcp",true,"mathieu merrio",89),
+            new DVD (2,"auqune idée",true,"jonathan zablot",89)
+        };
+        foreach (Document document in documents)
+        {
+            if(document is Livre livre)
+            {
+                livre.Afficher();
+            }
+            if(document is DVD dvd)
+            {
+                dvd.Afficher();
+            }
+            else
+            {
+                document.Afficher();
+            }
+        }
     }
 }
