@@ -32,5 +32,19 @@ class Program
                 document.Afficher();
             }
         }
+
+        List<Abonne> abonnes = new List<Abonne>
+        {
+            new Abonne (1,"mathieu merrio"),
+            new Abonne (2,"jonathan zablot"),
+            new Abonne (3,"alex colpin")
+        };
+        foreach (Abonne abonne in abonnes)
+        {
+            abonne.Afficher();
+        
+        }
+            
+        
     }
 }
