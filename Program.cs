@@ -13,6 +13,11 @@ class Program
             DVD dvd1 = new DVD (2,"jcp",true,"mathieu merrio",89);
             dvd1.Afficher();
             dvd1.ToString();
+            Console.WriteLine(livre1.ToString());
+            Abonne abonnetest = new Abonne(4,"gaillar quentin richard robert");
+            Console.WriteLine(abonnetest.ToString());
+            Emprunt emprunttest = new Emprunt(50, livre1, abonnetest, DateTime.Now , new DateTime(2027,14,11,0,0,0));
+            Console.WriteLine(emprunttest.ToString());
 
             List<Document> documents = new List<Document>
             {
@@ -79,6 +84,7 @@ class Program
         }
         
    
+        
         
     }
 }
