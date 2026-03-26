@@ -43,6 +43,10 @@ class Document
     {
         this.disponible = disponible;
     }
+    public Document(bool disponible)
+    {
+        this.disponible = disponible;
+    }
     
 }
         

@@ -61,7 +61,12 @@ class Program
         empreint.Add(1,"mathieu merrio");
         empreint.Add(2,"jonathan zablot");
         empreint.Add(3,"alex colpin");
-
+        foreach (KeyValuePair<int, string> paire in empreint)
+        {
+        
+            Console.WriteLine($"{paire.Key}: {paire.Value}");
+            
+        }
         
    
         
